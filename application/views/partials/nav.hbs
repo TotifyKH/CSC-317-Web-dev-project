@@ -1,0 +1,18 @@
+<head>
+  
+</head>
+<nav id="nav-bar">
+  <a href="/" class="nav-right"><img  src="/public/css/media/logo.png" alt="logo" class="nav-logo"></a>
+  <input id="search-text" name="search-text" type="text" class="nav-searchbar" placeholder="Search..">
+  <i id="search-button" class="fa-solid fa-magnifying-glass"></i>
+  <ul class="nav-containers">
+    
+    <li class="nav-item"><a href="/home">Home</a></li>
+    <li class="nav-item"><a href="/postimage">Post</a></li>
+  </ul>
+  {{#if logged}}
+  <a class="nav-logout" id="nav-logout" ><button>Log Out</button></a>
+  {{else}}
+  <a class="nav-login" id="nav-login" href="/login"><button>Log In</button></a>
+  {{/if}}
+</nav>

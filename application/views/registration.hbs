@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <script defer type="text/javascript" src="/public/js/regisvalidation.js"></script>
+</head> 
+<div class="regi-container">
+  <div class="regi-item-1">
+    <header>
+      REGISTER ACCOUNT
+    </header>
+  </div>
+  
+  <div class="regi-item-2">
+    <form id ="regi-form" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+      <div class="textfield">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" required><br>
+      </div>
+
+      <div class="textfield">
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="email" required><br>
+      </div>
+
+      <div class="textfield">
+        <label for="user-password">Password:</label>
+        <input type="password" id="user-password" name="password" required><br>
+      </div>
+
+      <div class="textfield">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="cPassword" required><br>
+      </div>
+
+      <div class="regi-checkbox">
+        <input type="checkbox" id="age-req" name="ageReq" required>
+        <label for="age-req">I am 13 years old or older</label><br>
+      </div>
+
+      <div class="regi-checkbox">
+        <input type="checkbox" id="TOS" name="TOS" required>
+        <label for="TOS">I have read and accept <a href="">TOS and Privacy rules</a></label><br>
+      </div>
+      <input type="submit" class = "regi-submit" value="Register">
+    </form>
+  </div>
+  <div id="regi-message"> </div>
+</div>
+
+

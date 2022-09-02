@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<div class="post-container">
+  <div class="post-item-1">
+    <header>
+      POST YOUR IMAGE
+    </header>
+  </div>
+
+  <div class="post-item-2">
+    <form id ='post-image' method="POST" enctype="multipart/form-data" action="/posts/createPost">
+      <div class="textfield">
+        <label for="title">Enter a Post Title :</label>
+        <input type="text" id="title" name="title" required><br>
+      </div>
+
+      <div class="textfield-description">
+        <label for="description">Enter the Post Description :</label>
+        <textarea rows = "5" name = "description"></textarea><br>     
+      </dov>
+      
+      <div class="post-file">
+        <label for="post-image">Choose Your Image :</label>
+        <input type="file" id="post-image" name="uploadImage" required><br>
+      </div>
+        
+      <div class="post-checkbox">
+        <label for="use-policy">
+          <input type="checkbox" id="use-policy" name="use-policy" required>
+          I accept the Acceptable Use Policy for uploading images
+        </label><br>
+      </div>
+
+      <input type="submit">
+    </form>
+  </div>
+</div>
