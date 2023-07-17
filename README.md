@@ -8,13 +8,6 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Student Information
 
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | Kimheng Peng    |
-| Student ID    | 921847378     |
-| Student Email | kpeng2@sfsu.edu    |
-
-
 
 # Build/Run Instructions
 
